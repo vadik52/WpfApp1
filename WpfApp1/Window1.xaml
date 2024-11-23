@@ -28,7 +28,7 @@
             <RadioButton Name="RadioB4" GroupName="test3" Content="турмс"/>
             <Button Content="ответить" Click="tanki"/>
             <Separator/>
-            <TextBlock>когда бы создан visual studio?</TextBlock>
+            <TextBlock>когда бы создан visual studio</TextBlock>
             <RadioButton Name="Radio" GroupName="test4" Content="1990"/>
             <RadioButton Name="Radio2" GroupName="test4" Content="1995"/>
             <RadioButton Name="Radio3" GroupName="test4" Content="2006"/>
