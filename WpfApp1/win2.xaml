@@ -5,12 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="win2" Height="450" Width="800">
+        Title="win2" Height="450" Width="300">
     <Grid>
-        <Button Content="назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="326,177,0,0" Height="66" Click="Button_Click"/>
-        <TextBlock FontSize="52" HorizontalAlignment="Left" Height="117" Margin="523,70,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="235"/>
-        <TextBox HorizontalAlignment="Left" Height="90" Margin="224,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="234"/>
-        <PasswordBox HorizontalAlignment="Left" Height="117" Margin="66,162,0,0" VerticalAlignment="Top" Width="205"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Name="txtDisplay" Grid.Row="0" Margin="10,10,10,10" FontSize="24" TextAlignment="Right" IsReadOnly="True"/>
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="0" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="2" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" FontSize="24" Background="White" Click="NumberButton_Click"/>
+                <Button Name="btn0" Content="0" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="1" FontSize="24" Click="NumberButton_Click"/>
+                <Button Name="btnDel" Content="/" Grid.Row="0" Grid.Column="1" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnMul" Content="*" Grid.Row="0" Grid.Column="2" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnMin" Content="-" Grid.Row="0" Grid.Column="3" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnPlus" Content="+" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" FontSize="24" Click="OperationButton_Click"/>
+                <Button Name="btnResult" Content="=" Grid.Row="3" Grid.RowSpan="4" Grid.Column="3" FontSize="24" Click="EqualsButton_Click"/>
+                <Button Name="btnClear" Content="c" Grid.Row="0" Grid.Column="0" FontSize="24" Click="ClearButton_Click"/>
+                <Button Name="btnDec" Content="." Grid.Row="4" Grid.Column="0" FontSize="24" Click="NumberButton_Click"/>
+            </Grid>
+
+        </Grid>
 
     </Grid>
 </Window>

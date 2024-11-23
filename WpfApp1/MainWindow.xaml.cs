@@ -39,6 +39,13 @@ namespace WpfApp1
             Application.Current.Shutdown();
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window1 window = new Window1();
+            window.Show();
+            this.Close();
+        }
+
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog { Filter = "Image Files| *.jpg;*.jpeg;*.png;*.gif;*.bmp;" };
