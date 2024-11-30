@@ -12,21 +12,18 @@
             <RadioButton Name="RadioBtn" GroupName="test1" Content="2015"/>
             <RadioButton Name="RadioBtn2" GroupName="test1" Content="2010"/>
             <RadioButton Name="RadioBtn3" GroupName="test1" Content="2013"/>
-            <Button Content="ответить" Click="thunder"/>
             <Separator/>
             <TextBlock>ты лох?</TextBlock>
             <RadioButton Name="RadioBt" GroupName="test2" Content="да"/>
             <RadioButton Name="RadioBt2" GroupName="test2" Content="нет"/>
             <RadioButton Name="RadioBt3" GroupName="test2" Content="незнаю"/>
             <RadioButton Name="RadioBt4" GroupName="test2" Content="наверное"/>
-            <Button Content="ответить" Click="lox"/>
             <Separator/>
             <TextBlock>ты играешь в танки?</TextBlock>
             <RadioButton Name="RadioB" GroupName="test3" Content="да"/>
             <RadioButton Name="RadioB2" GroupName="test3" Content="нет"/>
             <RadioButton Name="RadioB3" GroupName="test3" Content="пиво"/>
             <RadioButton Name="RadioB4" GroupName="test3" Content="турмс"/>
-            <Button Content="ответить" Click="tanki"/>
             <Separator/>
             <TextBlock>когда бы создан visual studio</TextBlock>
             <RadioButton Name="Radio" GroupName="test4" Content="1990"/>

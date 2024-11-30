@@ -60,5 +60,12 @@ namespace WpfApp1
         {
             kakahe.Text = "пуки каки";
         }
+
+        private void Button_Click_kombo(object sender, RoutedEventArgs e)
+        {
+            Window2 window = new Window2();
+            window.Show();
+            this.Close();
+        }
     }
 }
