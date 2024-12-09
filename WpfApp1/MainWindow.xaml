@@ -8,6 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <StackPanel>
+            <RadioButton GroupName="Phones" ToolTip="Цена: 50000 рублей" Content="iphone 6" />
+            <RadioButton GroupName="Phones" ToolTipService.Placement="Mouse"
+        ToolTip="Цена: 29990 рублей" Content="Nexus 5X" />
+            <RadioButton GroupName="Phones" ToolTip="Цена: 39990 рублей" Content="Lumia 950" />
+        </StackPanel>
+
+
         <ToggleButton x:Name="TogglePopupButton" Height="30" Width="150" HorizontalAlignment="Left" Margin="0,98,0,295">
             <StackPanel>
                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -25,7 +33,7 @@
             </StackPanel>
         </ToggleButton>
 
-        <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="309,162,0,0" Height="84" Click="Button_Click"/>
+        <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="354,288,0,0" Height="84" Click="Button_Click"/>
         <Image Name="DisplayImage" HorizontalAlignment="Left" Height="171" Margin="50,124,0,0" VerticalAlignment="Top" Width="201"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="85" Margin="72,210,0,0" VerticalAlignment="Top" Width="179" Click="Kakahe_Click"/>
         <TextBlock Name="kakahe" HorizontalAlignment="Left" Height="116" Margin="523,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
