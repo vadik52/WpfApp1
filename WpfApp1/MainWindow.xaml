@@ -38,6 +38,7 @@
         <Button Content="Button" HorizontalAlignment="Left" Height="85" Margin="72,210,0,0" VerticalAlignment="Top" Width="179" Click="Kakahe_Click"/>
         <TextBlock Name="kakahe" HorizontalAlignment="Left" Height="116" Margin="523,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
         <Button Content="kombo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="282,44,0,0" Height="84" Click="Button_Click_kombo"/>
+        <Button Content="win3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="552,295,0,0" Height="84" Click="Button_Click_win3"/>
         <Button Content="радио" Margin="559,124,141,166" Click="Button_Click_2"/>
     </Grid>
 </Window>
